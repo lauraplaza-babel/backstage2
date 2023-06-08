@@ -64,8 +64,9 @@ techdocs:
     type: 'azureBlobStorage' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
     azureBlobStorage:
       containerName: 'container-backstagepoc'
-      accountName: 'csb1003200283316de5'
-      accountKey: ${TECHDOCS_AZURE_BLOB_STORAGE_ACCOUNT_KEY}
+      credentials:
+        accountName: 'csb1003200283316de5'
+        accountKey: ${TECHDOCS_AZURE_BLOB_STORAGE_ACCOUNT_KEY}
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
   providers: {}
