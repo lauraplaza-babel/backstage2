@@ -57,15 +57,16 @@ proxy:
 # and an external cloud storage when deploying TechDocs for production use-case.
 # https://backstage.io/docs/features/techdocs/how-to-guides#how-to-migrate-from-techdocs-basic-to-recommended-deployment-approach
 techdocs:
-  builder: 'external' # Alternatives - 'external'
+  builder: 'local' # Alternatives - 'external'
   generator:
     runIn: 'docker' # Alternatives - 'local'
   publisher:
     type: 'azureBlobStorage' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
     azureBlobStorage:
       containerName: 'container-backstagepoc'
-      accountName: 'csb1003200283316de5'
-      accountKey: ${TECHDOCS_AZURE_BLOB_STORAGE_ACCOUNT_KEY}
+      credentials:
+        accountName: 'csb1003200283316de5'
+        accountKey: ${TECHDOCS_AZURE_BLOB_STORAGE_ACCOUNT_KEY}
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
   providers: {}
