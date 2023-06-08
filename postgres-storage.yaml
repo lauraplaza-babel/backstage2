@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: postgres-storage
+  name: postgres-storage2
   namespace: backstage2
   labels:
     type: local
