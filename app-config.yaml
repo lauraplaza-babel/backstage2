@@ -65,7 +65,7 @@ techdocs:
     azureBlobStorage:
       containerName: 'container-backstagepoc'
       accountName: 'csb1003200283316de5'
-      accountKey: 'BdcOU3Mv1oOXgEm505epRDNJXNDXwoGwD3GLmjH29HHC4yneAs4hSaWYop2x8vQabyRiZ8RulH4'
+      accountKey: ${TECHDOCS_AZURE_BLOB_STORAGE_ACCOUNT_KEY}
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
   providers: {}
