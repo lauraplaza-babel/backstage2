@@ -1,4 +1,8 @@
-site_name: Documentation Site
-docs_dir: docs
+site_name: 'artist-lookup'
+
 plugins:
   - techdocs-core
+
+# Uncomment to add extensions if desired
+#markdown_extensions:
+#  - markdown_inline_mermaid
