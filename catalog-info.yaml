@@ -1,16 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: artist-lookup
+  name: backstage
   description: An example of a Backstage application.
+  # Example for optional annotations
   annotations:
-    backstage.io/techdocs-ref: "https://csb1003200283316de5.blob.core.windows.net/container-backstagepoc"
- 
-
+  #   github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: "https://github.com/lauraplaza-babel/documentacion"
 spec:
   type: website
+  owner: john@example.com
   lifecycle: experimental
-  owner: user:guest
-
-
-
