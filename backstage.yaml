@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: lauraplaza/backstage:3.0.3
+          image: lauraplaza/backstage:3.0.4
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
