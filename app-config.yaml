@@ -110,7 +110,7 @@ catalog:
      - type: url
        target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
 
-      - type: url
+     - type: url
        target: https://github.com/lauraplaza-babel/backstage2/blob/master/examples/template/template2.yaml
 
     ## Uncomment these lines to add an example org
