@@ -24,7 +24,7 @@ spec:
             rows: 5
     - title: Choose a location
       required:
-        - repoUrl
+        - repoUrl: https://github.com/lauraplaza-babel/backstage2
       properties:
         repoUrl:
           title: Repository Location
