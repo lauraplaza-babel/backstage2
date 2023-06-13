@@ -16,11 +16,9 @@ FROM node:18-bullseye-slim
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update && \
-    apt-get install -y --no-install-recommends libsqlite3-dev python3 build-essential && \
-    yarn config set python /usr/bin/python3
-
-RUN apt-get update && apt-get install -y python3 python3-pip
-RUN pip3 install mkdocs-techdocs-core==1.1.7
+    apt-get install -y --no-install-recommends libsqlite3-dev python3 python3-pip build-essential && \
+    yarn config set python /usr/bin/python3 \
+# pip3 install mkdocs-techdocs-core==1.2.1
 
 # From here on we use the least-privileged `node` user to run the backend.
 USER node
