@@ -42,7 +42,10 @@ RUN --mount=type=cache,target=/home/node/.cache/yarn,sharing=locked,uid=1000,gid
 # Then copy the rest of the backend bundle, along with any other files we might want.
 COPY --chown=node:node packages/backend/dist/bundle.tar.gz app-config*.yaml ./
 COPY --chown=node:node packages/backend/dist/bundle.tar.gz catalog-info.yaml ./
-COPY --chown=node:node packages/backend/dist/bundle.tar.gz examples/template/template.yaml  ./
+COPY --chown=node:node packages/backend/dist/bundle.tar.gz /examples/template/template2.yaml ./
+COPY --chown=node:node packages/backend/dist/bundle.tar.gz mkdocs.yml ./
+COPY --chown=node:node packages/backend/dist/bundle.tar.gz docs/* ./
+
 RUN tar xzf bundle.tar.gz && rm bundle.tar.gz
 
 
